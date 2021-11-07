@@ -16,6 +16,7 @@ class TableViewCellFavorites: UITableViewCell {
     @IBOutlet private weak var languageLabel: UILabel!
     @IBOutlet private weak var forksLabel: UILabel!
     @IBOutlet private weak var starsLabel: UILabel!
+    @IBOutlet private weak var userImage: UIImageView!
     
     
     
@@ -24,14 +25,15 @@ class TableViewCellFavorites: UITableViewCell {
         // Initialization code
     }
 
-    //MAKE: - Labels binding
-    func configFavorit(nick: String, content: String, descript: String, lang: String, fork: String, star: String) {
-        userLabel.text = nick
-        contentLabel.text = content
-        descriptLabel.text = "Description: \(descript)"
-        languageLabel.text = lang
-        forksLabel.text = "\(fork) forks"
-        starsLabel.text = "\(star) stars"
+    //MAKE: - Accept data from VCFavorites
+    func configFavorit(model: Reposit) {
+        userLabel.text = model.name
+        contentLabel.text = model.content
+        descriptLabel.text = "Description: \(model.descript)"
+        languageLabel.text = model.lang
+        forksLabel.text = "\(model.fork) forks"
+        starsLabel.text = "\(model.star) stars"
+        userImage.image = model.image
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
