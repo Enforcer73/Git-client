@@ -1,14 +1,14 @@
 //
-//  TableViewCellFavorites.swift
+//  TableViewCell.swift
 //  Git client
 //
-//  Created by Ruslan Bagautdinov on 03.11.2021.
+//  Created by Ruslan Bagautdinov on 02.11.2021.
 //
 
 import UIKit
+import Kingfisher
 
-class TableViewCellFavorites: UITableViewCell {
-
+class TableViewCell: UITableViewCell {
 
     @IBOutlet private weak var userLabel: UILabel!
     @IBOutlet private weak var contentLabel: UILabel!
@@ -25,22 +25,26 @@ class TableViewCellFavorites: UITableViewCell {
         // Initialization code
     }
 
-    //MAKE: - Accept data from VCFavorites
-    func configFavorit(model: Reposit) {
-        userLabel.text = model.name
-        contentLabel.text = model.content
-        descriptLabel.text = "Description: \(model.descript)"
-        languageLabel.text = model.lang
-        forksLabel.text = "\(model.fork) forks"
-        starsLabel.text = "\(model.star) stars"
-        userImage.image = model.image
+    
+    
+    //MAKE: - Accept data from VC
+    func configFirst(model: GitData) {
+        userLabel.text = model.login
+        contentLabel.text = model.name
+        descriptLabel.text = model.description
+        languageLabel.text = model.language
+        forksLabel.text = "\(model.forksCount) forks"
+        starsLabel.text = "\(model.stars) stars"
+
+        let url = URL(string: model.avatarUrl)
+        userImage.kf.setImage(with: url)
     }
+        
+
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
     }
-    
-    
 }

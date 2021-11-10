@@ -16,12 +16,12 @@ class DetailCommitFavoritViewController: UIViewController {
     @IBOutlet private weak var dateLabel: UILabel!
     @IBOutlet private weak var tableDetailCommitFavorit: UITableView!
     
-    private var selectCommit: Commit?
-    private var model: RepData?
     
-    private var commitCode = [
-        Commit(codCom : "if let cell = tableView.dequeueReusableCell(withIdentifier: \"firstCell\", for: indexPath) as? TableViewCell")
-        ]
+    private var model: GitData?
+    private var gitdata = [GitData]()
+    private var selectedContent: GitData?
+    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,18 +30,18 @@ class DetailCommitFavoritViewController: UIViewController {
     }
     
     //MAKE: - Accept data from FavoritVC
-    func configDetailCommitFavorit(with model: RepData?) {
+    func configDetailCommitFavorit(with model: GitData?) {
         guard let model = model else { return }
 
-        userLabel.text = model.name
-        descriptLabel.text = model.desc
-        dateLabel.text = model.date
-        if let image = model.image {
-            userImage.image = image
-        }
+        userLabel.text = model.login
+        descriptLabel.text = model.description
+        dateLabel.text = model.updatedAt
+//        if let image = model.image {
+//            userImage.image = image
+//        }
     }
 
-    func set(model: RepData?) {
+    func set(model: GitData?) {
         self.model = model
     }
     
@@ -61,12 +61,12 @@ extension DetailCommitFavoritViewController: UITableViewDelegate, UITableViewDat
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        commitCode.count
+        gitdata.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "detailCommFavor", for: indexPath) as? DetailCommitFavoritTableViewCell {
-            cell.configDetailCommitFavorit(model: commitCode[indexPath.row])
+            cell.configDetailCommitFavorit(model: gitdata[indexPath.row])
             return cell
         } else {
             return UITableViewCell()

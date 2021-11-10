@@ -22,11 +22,11 @@ class FavoritCommitTableViewCell: UITableViewCell {
     }
 
     //MAKE: - Accept data from FavoritVC
-    func configFavoritCommit(model: RepData) {
-        userImage.image = model.image
-        userLabel.text = model.name
-        dateLabel.text = model.date
-        descriptLabel.text = model.desc
+    func configFavoritCommit(model: GitData) {
+//        userImage.image = model.image
+        userLabel.text = model.login
+        dateLabel.text = model.updatedAt
+        descriptLabel.text = model.description
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {

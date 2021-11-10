@@ -7,4 +7,5 @@ target 'Git client' do
 
   # Pods for Git client
   pod 'SnapKit'
+  pod 'Kingfisher', '~> 7.0'
 end

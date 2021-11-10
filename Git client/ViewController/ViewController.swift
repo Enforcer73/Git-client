@@ -6,37 +6,27 @@
 //
 
 import UIKit
+import Kingfisher
 
-
-struct Reposit {
-    let name: String
-    let content: String
-    let descript: String
-    let lang: String
-    let fork: String
-    let star: String
-    let image: UIImage?
-}
 
 class ViewController: UIViewController {
 
     
     @IBOutlet private weak var tableViewFirst: UITableView!
+    @IBOutlet private weak var labelLoad: UILabel!
+    @IBOutlet weak var loadSpiner: UIActivityIndicatorView!
     
-    private var selectedContent: Reposit?
-        
-    private var data = [
-        Reposit(name : "Enforcer", content : "lesson", descript : "terwtwertew ertwertwetdgsdfgsdf sdfgsdfg sdfgsdfg", lang : "swift", fork: "1", star : "1", image: UIImage(named: "valak")),
-        Reposit(name : "Tatarin", content : "works", descript : "чики пуки", lang : "swift", fork : "1", star : "5", image: UIImage(named: "buh")),
-        Reposit(name : "Enforcer", content : "lesson", descript : "terwtwertew ertwertwetdgsdfgsdf sdfgsdfg sdfgsdfg", lang : "swift", fork: "1", star : "1", image: UIImage(named: "valak")),
-        Reposit(name : "Tatarin", content : "works", descript : "чики пуки", lang : "swift", fork : "1", star : "5", image: UIImage(named: "buh")),
-        Reposit(name : "Enforcer", content : "lesson", descript : "terwtwertew ertwertwetdgsdfgsdf sdfgsdfg sdfgsdfg", lang : "swift", fork: "1", star : "1", image: UIImage(named: "valak")),
-        Reposit(name : "Tatarin", content : "works", descript : "чики пуки", lang : "swift", fork : "1", star : "5", image: UIImage(named: "buh"))
-        ]
+    private let viewModel = ViewModel()
+    private var gitdata = [GitData]()
+    private var selectedContent: GitData?
+    
+
         
     override func viewDidLoad() {
         super.viewDidLoad()
         configTableFirst()
+        viewModel.delegate = self
+        loadSpiner.startAnimating()
     }
 
     //MAKE: - Announce Delegate & registering table
@@ -44,6 +34,7 @@ class ViewController: UIViewController {
         tableViewFirst.delegate = self
         tableViewFirst.dataSource = self
         tableViewFirst.register( UINib(nibName: "TableViewCell", bundle: .main), forCellReuseIdentifier: "firstCell")
+        viewModel.getGitData()
     }
         
     //MAKE: - Broadcast data to ContentVC
@@ -54,11 +45,39 @@ class ViewController: UIViewController {
     }
 }
 
+
+extension ViewController: ViewModelDelegate {
+    func dataDidReciveGitData(data: [GitData]) {
+        DispatchQueue.main.async {[weak self] in
+//            self?.labelLoad.textColor = .white
+//            self?.labelLoad.text = "Данные загружены"
+            self?.gitdata = data
+            
+            
+
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {[weak self] in
+                self?.tableViewFirst.reloadData()
+                self?.labelLoad.isHidden = true
+                self?.loadSpiner.hidesWhenStopped = true
+                self?.loadSpiner.stopAnimating()
+            }
+        }
+    }
+
+    func error() {
+        DispatchQueue.main.async {[weak self] in
+            self?.labelLoad.textColor = .red
+            self?.labelLoad.text = "Ошибка сети"
+            
+        }
+    }
+}
+
 //MAKE: - Create table
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
         
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        data.count
+        gitdata.count
     }
         
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -67,7 +86,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "firstCell", for: indexPath) as? TableViewCell {
-            cell.configFirst(model: data[indexPath.row])
+            cell.configFirst(model: gitdata[indexPath.row])
             return cell
         } else {
             return  UITableViewCell()
@@ -76,7 +95,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         
     //MAKE: - Touch processing by table
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        selectedContent = data[indexPath.row]
+        selectedContent = gitdata[indexPath.row]
         performSegue(withIdentifier: "toCont", sender: self)
     }
         

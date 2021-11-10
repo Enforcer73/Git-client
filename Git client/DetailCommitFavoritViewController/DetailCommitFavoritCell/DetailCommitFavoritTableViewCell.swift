@@ -17,8 +17,8 @@ class DetailCommitFavoritTableViewCell: UITableViewCell {
     }
 
     //MAKE: - Accept data from DetailCommitFavoritVC
-    func configDetailCommitFavorit(model: Commit) {
-        labelCommit.text = model.codCom
+    func configDetailCommitFavorit(model: GitData) {
+        labelCommit.text = model.commits
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {

@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import Kingfisher
+
 
 class DetailCommitTableViewCell: UITableViewCell {
 
@@ -19,8 +21,8 @@ class DetailCommitTableViewCell: UITableViewCell {
     }
 
     //MAKE: - Accept data from DetalCommitVC
-    func configLabelCommit(model: Commit) {
-        labelCommit.text = model.codCom
+    func configLabelCommit(model: GitData) {
+        labelCommit.text = model.commits
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
