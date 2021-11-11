@@ -17,7 +17,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qu8-pJ-qOE">
-                        <rect key="frame" x="10" y="29" width="367" height="18"/>
+                        <rect key="frame" x="10" y="29" width="357" height="18"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <color key="textColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
@@ -36,7 +36,7 @@
                     <constraint firstItem="24h-TY-gZt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="AdP-8W-sc2"/>
                     <constraint firstItem="Qu8-pJ-qOE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="U1u-yC-1Ua"/>
                     <constraint firstItem="24h-TY-gZt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="V5u-jX-d2V"/>
-                    <constraint firstAttribute="trailing" secondItem="Qu8-pJ-qOE" secondAttribute="trailing" id="dtk-DO-6Z2"/>
+                    <constraint firstAttribute="trailing" secondItem="Qu8-pJ-qOE" secondAttribute="trailing" constant="10" id="dtk-DO-6Z2"/>
                     <constraint firstItem="Qu8-pJ-qOE" firstAttribute="top" secondItem="24h-TY-gZt" secondAttribute="bottom" constant="10" id="jNB-ec-oUb"/>
                 </constraints>
                 <userDefinedRuntimeAttributes>

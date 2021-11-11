@@ -29,7 +29,7 @@
                         </userDefinedRuntimeAttributes>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="descript" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3lc-9B-ecM">
-                        <rect key="frame" x="20" y="57" width="477" height="18"/>
+                        <rect key="frame" x="20" y="57" width="457" height="18"/>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
@@ -55,7 +55,7 @@
                     <constraint firstAttribute="trailing" secondItem="Asd-S0-xzB" secondAttribute="trailing" constant="20" id="Mdu-lZ-Hjx"/>
                     <constraint firstItem="KxO-bJ-X5k" firstAttribute="leading" secondItem="LuI-Oq-xQS" secondAttribute="trailing" constant="15" id="c4L-Rj-9Vr"/>
                     <constraint firstItem="Asd-S0-xzB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="feJ-9c-ghe"/>
-                    <constraint firstAttribute="trailing" secondItem="3lc-9B-ecM" secondAttribute="trailing" id="lZe-ZV-efo"/>
+                    <constraint firstAttribute="trailing" secondItem="3lc-9B-ecM" secondAttribute="trailing" constant="20" id="lZe-ZV-efo"/>
                     <constraint firstItem="LuI-Oq-xQS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="loh-tG-eRk"/>
                     <constraint firstAttribute="bottom" secondItem="3lc-9B-ecM" secondAttribute="bottom" constant="10" id="naJ-Kd-tqB"/>
                     <constraint firstItem="3lc-9B-ecM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="oaf-xb-4xP"/>

@@ -21,6 +21,7 @@ class ContentViewController: UIViewController {
     @IBOutlet private weak var tableContentCommit: UITableView!
     @IBOutlet private weak var labelLoad: UILabel!
     @IBOutlet private weak var loadSpiner: UIActivityIndicatorView!
+    @IBOutlet private weak var viewLoad: UIView!
     
     private let contentModel = ContentModel()
     private var gitdata = [GitData]()
@@ -85,6 +86,7 @@ extension ContentViewController: ContentModelDelegate {
             DispatchQueue.main.asyncAfter(deadline: .now() + 1) {[weak self] in
                 self?.tableContentCommit.reloadData()
                 self?.labelLoad.isHidden = true
+                self?.viewLoad.isHidden = true
                 self?.loadSpiner.hidesWhenStopped = true
                 self?.loadSpiner.stopAnimating()
             }
