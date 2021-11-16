@@ -7,15 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C20D555227378EFC004A6F5B /* DetailCommitTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20D555027378EFC004A6F5B /* DetailCommitTableViewCell.swift */; };
-		C20D555327378EFC004A6F5B /* DetailCommitTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C20D555127378EFC004A6F5B /* DetailCommitTableViewCell.xib */; };
-		C20D555627378F3A004A6F5B /* DetailCommitFavoritTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20D555427378F3A004A6F5B /* DetailCommitFavoritTableViewCell.swift */; };
-		C20D555727378F3A004A6F5B /* DetailCommitFavoritTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C20D555527378F3A004A6F5B /* DetailCommitFavoritTableViewCell.xib */; };
-		C2112618273674B700005A6A /* DetailCommitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2112617273674B700005A6A /* DetailCommitViewController.swift */; };
-		C211261A2736849700005A6A /* DetailCommitFavoritViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21126192736849700005A6A /* DetailCommitFavoritViewController.swift */; };
-		C219D7BD27345CF70040D713 /* FavoritViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C219D7BC27345CF70040D713 /* FavoritViewController.swift */; };
-		C24B96EF2735468E0051B64F /* ContentCommitTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24B96ED2735468E0051B64F /* ContentCommitTableViewCell.swift */; };
-		C24B96F02735468E0051B64F /* ContentCommitTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C24B96EE2735468E0051B64F /* ContentCommitTableViewCell.xib */; };
+		C219D7BD27345CF70040D713 /* DetailFavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C219D7BC27345CF70040D713 /* DetailFavoritesViewController.swift */; };
+		C24B96EF2735468E0051B64F /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24B96ED2735468E0051B64F /* DetailTableViewCell.swift */; };
+		C24B96F02735468E0051B64F /* DetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C24B96EE2735468E0051B64F /* DetailTableViewCell.xib */; };
+		C25C15FB2743CC4300DDD0CA /* FavoritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25C15FA2743CC4300DDD0CA /* FavoritesViewModel.swift */; };
 		C25F021627317EC2002B7635 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25F021527317EC2002B7635 /* AppDelegate.swift */; };
 		C25F021A27317EC2002B7635 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25F021927317EC2002B7635 /* ViewController.swift */; };
 		C25F021D27317EC2002B7635 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C25F021B27317EC2002B7635 /* Main.storyboard */; };
@@ -23,19 +18,18 @@
 		C25F022227317EC3002B7635 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C25F022027317EC3002B7635 /* LaunchScreen.storyboard */; };
 		C25F022F2731865D002B7635 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25F022D2731865D002B7635 /* TableViewCell.swift */; };
 		C25F02302731865D002B7635 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C25F022E2731865D002B7635 /* TableViewCell.xib */; };
-		C27EFA032735A694001156D2 /* FavoritCommitTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27EFA012735A694001156D2 /* FavoritCommitTableViewCell.swift */; };
-		C27EFA042735A694001156D2 /* FavoritCommitTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C27EFA022735A694001156D2 /* FavoritCommitTableViewCell.xib */; };
-		C2870A8627341E50006693CE /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2870A8527341E50006693CE /* ContentViewController.swift */; };
+		C27EFA032735A694001156D2 /* DetailFavoritesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27EFA012735A694001156D2 /* DetailFavoritesTableViewCell.swift */; };
+		C27EFA042735A694001156D2 /* DetailFavoritesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C27EFA022735A694001156D2 /* DetailFavoritesTableViewCell.xib */; };
+		C2870A8627341E50006693CE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2870A8527341E50006693CE /* DetailViewController.swift */; };
 		C2AE2AD4273AC2770056971B /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AE2AD3273AC2770056971B /* ViewModel.swift */; };
 		C2AE2AD8273AC2E40056971B /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AE2AD7273AC2E40056971B /* NetworkService.swift */; };
-		C2AE2ADB273AC30A0056971B /* GitModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AE2ADA273AC30A0056971B /* GitModel.swift */; };
-		C2AE3A69273B92F300EA94AF /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AE3A68273B92F300EA94AF /* ContentModel.swift */; };
-		C2AE3A6B273B971C00EA94AF /* DelailCommitModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AE3A6A273B971C00EA94AF /* DelailCommitModel.swift */; };
-		C2B904AD273263A90005CF8E /* ViewControllerLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B904AC273263A90005CF8E /* ViewControllerLogin.swift */; };
-		C2E404FF2732CF37006C2DD2 /* ViewControllerTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E404FE2732CF37006C2DD2 /* ViewControllerTabBar.swift */; };
-		C2FAC0FD273284D400504FE4 /* ViewControllerFavorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FAC0FC273284D400504FE4 /* ViewControllerFavorites.swift */; };
-		C2FAC1002732857D00504FE4 /* TableViewCellFavorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FAC0FE2732857D00504FE4 /* TableViewCellFavorites.swift */; };
-		C2FAC1012732857D00504FE4 /* TableViewCellFavorites.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2FAC0FF2732857D00504FE4 /* TableViewCellFavorites.xib */; };
+		C2B904AD273263A90005CF8E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B904AC273263A90005CF8E /* LoginViewController.swift */; };
+		C2C293EA2740C3960032169F /* CommitData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C293E92740C3960032169F /* CommitData.swift */; };
+		C2C293EE2740C45F0032169F /* GitData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C293ED2740C45F0032169F /* GitData.swift */; };
+		C2E404FF2732CF37006C2DD2 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E404FE2732CF37006C2DD2 /* TabBarViewController.swift */; };
+		C2FAC0FD273284D400504FE4 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FAC0FC273284D400504FE4 /* FavoritesViewController.swift */; };
+		C2FAC1002732857D00504FE4 /* FavoritesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FAC0FE2732857D00504FE4 /* FavoritesTableViewCell.swift */; };
+		C2FAC1012732857D00504FE4 /* FavoritesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2FAC0FF2732857D00504FE4 /* FavoritesTableViewCell.xib */; };
 		EC138219E7205500F3540852 /* Pods_Git_client.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04176C7A2A41261A0C0A22B2 /* Pods_Git_client.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,15 +37,10 @@
 		00F43DC50DCE0BE2EA991BBB /* Pods-Git client.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Git client.debug.xcconfig"; path = "Target Support Files/Pods-Git client/Pods-Git client.debug.xcconfig"; sourceTree = "<group>"; };
 		04176C7A2A41261A0C0A22B2 /* Pods_Git_client.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Git_client.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74E28BF888172ACB56A63DC1 /* Pods-Git client.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Git client.release.xcconfig"; path = "Target Support Files/Pods-Git client/Pods-Git client.release.xcconfig"; sourceTree = "<group>"; };
-		C20D555027378EFC004A6F5B /* DetailCommitTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCommitTableViewCell.swift; sourceTree = "<group>"; };
-		C20D555127378EFC004A6F5B /* DetailCommitTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailCommitTableViewCell.xib; sourceTree = "<group>"; };
-		C20D555427378F3A004A6F5B /* DetailCommitFavoritTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCommitFavoritTableViewCell.swift; sourceTree = "<group>"; };
-		C20D555527378F3A004A6F5B /* DetailCommitFavoritTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailCommitFavoritTableViewCell.xib; sourceTree = "<group>"; };
-		C2112617273674B700005A6A /* DetailCommitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCommitViewController.swift; sourceTree = "<group>"; };
-		C21126192736849700005A6A /* DetailCommitFavoritViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCommitFavoritViewController.swift; sourceTree = "<group>"; };
-		C219D7BC27345CF70040D713 /* FavoritViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritViewController.swift; sourceTree = "<group>"; };
-		C24B96ED2735468E0051B64F /* ContentCommitTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCommitTableViewCell.swift; sourceTree = "<group>"; };
-		C24B96EE2735468E0051B64F /* ContentCommitTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContentCommitTableViewCell.xib; sourceTree = "<group>"; };
+		C219D7BC27345CF70040D713 /* DetailFavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailFavoritesViewController.swift; sourceTree = "<group>"; };
+		C24B96ED2735468E0051B64F /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
+		C24B96EE2735468E0051B64F /* DetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailTableViewCell.xib; sourceTree = "<group>"; };
+		C25C15FA2743CC4300DDD0CA /* FavoritesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewModel.swift; sourceTree = "<group>"; };
 		C25F021227317EC2002B7635 /* Git client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Git client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C25F021527317EC2002B7635 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C25F021927317EC2002B7635 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,19 +50,18 @@
 		C25F022327317EC3002B7635 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C25F022D2731865D002B7635 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		C25F022E2731865D002B7635 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
-		C27EFA012735A694001156D2 /* FavoritCommitTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritCommitTableViewCell.swift; sourceTree = "<group>"; };
-		C27EFA022735A694001156D2 /* FavoritCommitTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritCommitTableViewCell.xib; sourceTree = "<group>"; };
-		C2870A8527341E50006693CE /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
+		C27EFA012735A694001156D2 /* DetailFavoritesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailFavoritesTableViewCell.swift; sourceTree = "<group>"; };
+		C27EFA022735A694001156D2 /* DetailFavoritesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailFavoritesTableViewCell.xib; sourceTree = "<group>"; };
+		C2870A8527341E50006693CE /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		C2AE2AD3273AC2770056971B /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		C2AE2AD7273AC2E40056971B /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
-		C2AE2ADA273AC30A0056971B /* GitModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitModel.swift; sourceTree = "<group>"; };
-		C2AE3A68273B92F300EA94AF /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
-		C2AE3A6A273B971C00EA94AF /* DelailCommitModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelailCommitModel.swift; sourceTree = "<group>"; };
-		C2B904AC273263A90005CF8E /* ViewControllerLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerLogin.swift; sourceTree = "<group>"; };
-		C2E404FE2732CF37006C2DD2 /* ViewControllerTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTabBar.swift; sourceTree = "<group>"; };
-		C2FAC0FC273284D400504FE4 /* ViewControllerFavorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFavorites.swift; sourceTree = "<group>"; };
-		C2FAC0FE2732857D00504FE4 /* TableViewCellFavorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellFavorites.swift; sourceTree = "<group>"; };
-		C2FAC0FF2732857D00504FE4 /* TableViewCellFavorites.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCellFavorites.xib; sourceTree = "<group>"; };
+		C2B904AC273263A90005CF8E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C2C293E92740C3960032169F /* CommitData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitData.swift; sourceTree = "<group>"; };
+		C2C293ED2740C45F0032169F /* GitData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitData.swift; sourceTree = "<group>"; };
+		C2E404FE2732CF37006C2DD2 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		C2FAC0FC273284D400504FE4 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		C2FAC0FE2732857D00504FE4 /* FavoritesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewCell.swift; sourceTree = "<group>"; };
+		C2FAC0FF2732857D00504FE4 /* FavoritesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritesTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,125 +93,88 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C21EAEB3273B801E000B5BF1 /* ViewControllerCell */ = {
+		C21EAEB6273B8096000B5BF1 /* FavoritesTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				C25F022D2731865D002B7635 /* TableViewCell.swift */,
-				C25F022E2731865D002B7635 /* TableViewCell.xib */,
+				C2FAC0FE2732857D00504FE4 /* FavoritesTableViewCell.swift */,
+				C2FAC0FF2732857D00504FE4 /* FavoritesTableViewCell.xib */,
 			);
-			path = ViewControllerCell;
+			path = FavoritesTableViewCell;
 			sourceTree = "<group>";
 		};
-		C21EAEB4273B8040000B5BF1 /* ContentViewControllerCell */ = {
+		C21EAEB7273B80C8000B5BF1 /* DetailFavoritesTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				C24B96ED2735468E0051B64F /* ContentCommitTableViewCell.swift */,
-				C24B96EE2735468E0051B64F /* ContentCommitTableViewCell.xib */,
+				C27EFA012735A694001156D2 /* DetailFavoritesTableViewCell.swift */,
+				C27EFA022735A694001156D2 /* DetailFavoritesTableViewCell.xib */,
 			);
-			path = ContentViewControllerCell;
+			path = DetailFavoritesTableViewCell;
 			sourceTree = "<group>";
 		};
-		C21EAEB5273B8064000B5BF1 /* DetailCommitViewControllerCell */ = {
+		C228FD8327381F1700DE8332 /* LoginViewController */ = {
 			isa = PBXGroup;
 			children = (
-				C20D555027378EFC004A6F5B /* DetailCommitTableViewCell.swift */,
-				C20D555127378EFC004A6F5B /* DetailCommitTableViewCell.xib */,
+				C2B904AC273263A90005CF8E /* LoginViewController.swift */,
+				C2E404FE2732CF37006C2DD2 /* TabBarViewController.swift */,
 			);
-			path = DetailCommitViewControllerCell;
-			sourceTree = "<group>";
-		};
-		C21EAEB6273B8096000B5BF1 /* ViewControllerFavoritesCell */ = {
-			isa = PBXGroup;
-			children = (
-				C2FAC0FE2732857D00504FE4 /* TableViewCellFavorites.swift */,
-				C2FAC0FF2732857D00504FE4 /* TableViewCellFavorites.xib */,
-			);
-			path = ViewControllerFavoritesCell;
-			sourceTree = "<group>";
-		};
-		C21EAEB7273B80C8000B5BF1 /* FavoritViewControllerCell */ = {
-			isa = PBXGroup;
-			children = (
-				C27EFA012735A694001156D2 /* FavoritCommitTableViewCell.swift */,
-				C27EFA022735A694001156D2 /* FavoritCommitTableViewCell.xib */,
-			);
-			path = FavoritViewControllerCell;
-			sourceTree = "<group>";
-		};
-		C21EAEB8273B80E6000B5BF1 /* DetailCommitFavoritCell */ = {
-			isa = PBXGroup;
-			children = (
-				C20D555427378F3A004A6F5B /* DetailCommitFavoritTableViewCell.swift */,
-				C20D555527378F3A004A6F5B /* DetailCommitFavoritTableViewCell.xib */,
-			);
-			path = DetailCommitFavoritCell;
-			sourceTree = "<group>";
-		};
-		C228FD8327381F1700DE8332 /* ViewControllerLogin */ = {
-			isa = PBXGroup;
-			children = (
-				C2B904AC273263A90005CF8E /* ViewControllerLogin.swift */,
-				C2E404FE2732CF37006C2DD2 /* ViewControllerTabBar.swift */,
-			);
-			name = ViewControllerLogin;
+			name = LoginViewController;
 			path = ..;
 			sourceTree = "<group>";
 		};
-		C228FD8427381F4A00DE8332 /* ViewController */ = {
+		C228FD872738203500DE8332 /* FavoritesViewController */ = {
 			isa = PBXGroup;
 			children = (
-				C21EAEB3273B801E000B5BF1 /* ViewControllerCell */,
+				C21EAEB6273B8096000B5BF1 /* FavoritesTableViewCell */,
+				C2FAC0FC273284D400504FE4 /* FavoritesViewController.swift */,
+				C25C15FA2743CC4300DDD0CA /* FavoritesViewModel.swift */,
+			);
+			path = FavoritesViewController;
+			sourceTree = "<group>";
+		};
+		C228FD882738206600DE8332 /* DetailFavoritesViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C21EAEB7273B80C8000B5BF1 /* DetailFavoritesTableViewCell */,
+				C219D7BC27345CF70040D713 /* DetailFavoritesViewController.swift */,
+			);
+			path = DetailFavoritesViewController;
+			sourceTree = "<group>";
+		};
+		C22FBECE27406BD300843055 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C22FBECF27406BF100843055 /* TableViewCell */,
 				C25F021927317EC2002B7635 /* ViewController.swift */,
 				C2AE2AD3273AC2770056971B /* ViewModel.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
 		};
-		C228FD8527381FA100DE8332 /* ContentViewController */ = {
+		C22FBECF27406BF100843055 /* TableViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				C21EAEB4273B8040000B5BF1 /* ContentViewControllerCell */,
-				C2870A8527341E50006693CE /* ContentViewController.swift */,
-				C2AE3A68273B92F300EA94AF /* ContentModel.swift */,
+				C25F022D2731865D002B7635 /* TableViewCell.swift */,
+				C25F022E2731865D002B7635 /* TableViewCell.xib */,
 			);
-			path = ContentViewController;
+			path = TableViewCell;
 			sourceTree = "<group>";
 		};
-		C228FD8627381FE800DE8332 /* DetailCommitViewController */ = {
+		C22FBED027406C0D00843055 /* DetailViewController */ = {
 			isa = PBXGroup;
 			children = (
-				C21EAEB5273B8064000B5BF1 /* DetailCommitViewControllerCell */,
-				C2112617273674B700005A6A /* DetailCommitViewController.swift */,
-				C2AE3A6A273B971C00EA94AF /* DelailCommitModel.swift */,
+				C22FBED127406C2400843055 /* DetailTableViewCell */,
+				C2870A8527341E50006693CE /* DetailViewController.swift */,
 			);
-			path = DetailCommitViewController;
+			path = DetailViewController;
 			sourceTree = "<group>";
 		};
-		C228FD872738203500DE8332 /* ViewControllerFavorites */ = {
+		C22FBED127406C2400843055 /* DetailTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				C21EAEB6273B8096000B5BF1 /* ViewControllerFavoritesCell */,
-				C2FAC0FC273284D400504FE4 /* ViewControllerFavorites.swift */,
+				C24B96ED2735468E0051B64F /* DetailTableViewCell.swift */,
+				C24B96EE2735468E0051B64F /* DetailTableViewCell.xib */,
 			);
-			path = ViewControllerFavorites;
-			sourceTree = "<group>";
-		};
-		C228FD882738206600DE8332 /* FavoritViewController */ = {
-			isa = PBXGroup;
-			children = (
-				C21EAEB7273B80C8000B5BF1 /* FavoritViewControllerCell */,
-				C219D7BC27345CF70040D713 /* FavoritViewController.swift */,
-			);
-			path = FavoritViewController;
-			sourceTree = "<group>";
-		};
-		C228FD892738208E00DE8332 /* DetailCommitFavoritViewController */ = {
-			isa = PBXGroup;
-			children = (
-				C21EAEB8273B80E6000B5BF1 /* DetailCommitFavoritCell */,
-				C21126192736849700005A6A /* DetailCommitFavoritViewController.swift */,
-			);
-			path = DetailCommitFavoritViewController;
+			path = DetailTableViewCell;
 			sourceTree = "<group>";
 		};
 		C25F020927317EC2002B7635 = {
@@ -248,15 +199,13 @@
 			isa = PBXGroup;
 			children = (
 				C2AE2AD5273AC2A30056971B /* Services */,
-				C228FD8327381F1700DE8332 /* ViewControllerLogin */,
+				C228FD8327381F1700DE8332 /* LoginViewController */,
 				C25F021527317EC2002B7635 /* AppDelegate.swift */,
-				C228FD8427381F4A00DE8332 /* ViewController */,
-				C228FD8527381FA100DE8332 /* ContentViewController */,
-				C228FD8627381FE800DE8332 /* DetailCommitViewController */,
+				C22FBECE27406BD300843055 /* ViewController */,
+				C22FBED027406C0D00843055 /* DetailViewController */,
 				C25F021B27317EC2002B7635 /* Main.storyboard */,
-				C228FD872738203500DE8332 /* ViewControllerFavorites */,
-				C228FD882738206600DE8332 /* FavoritViewController */,
-				C228FD892738208E00DE8332 /* DetailCommitFavoritViewController */,
+				C228FD872738203500DE8332 /* FavoritesViewController */,
+				C228FD882738206600DE8332 /* DetailFavoritesViewController */,
 				C25F021E27317EC3002B7635 /* Assets.xcassets */,
 				C25F022027317EC3002B7635 /* LaunchScreen.storyboard */,
 				C25F022327317EC3002B7635 /* Info.plist */,
@@ -284,7 +233,8 @@
 		C2AE2AD9273AC2EA0056971B /* NetworkModels */ = {
 			isa = PBXGroup;
 			children = (
-				C2AE2ADA273AC30A0056971B /* GitModel.swift */,
+				C2C293ED2740C45F0032169F /* GitData.swift */,
+				C2C293E92740C3960032169F /* CommitData.swift */,
 			);
 			path = NetworkModels;
 			sourceTree = "<group>";
@@ -349,14 +299,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2FAC1012732857D00504FE4 /* TableViewCellFavorites.xib in Resources */,
+				C2FAC1012732857D00504FE4 /* FavoritesTableViewCell.xib in Resources */,
 				C25F022227317EC3002B7635 /* LaunchScreen.storyboard in Resources */,
 				C25F02302731865D002B7635 /* TableViewCell.xib in Resources */,
 				C25F021F27317EC3002B7635 /* Assets.xcassets in Resources */,
-				C24B96F02735468E0051B64F /* ContentCommitTableViewCell.xib in Resources */,
-				C20D555327378EFC004A6F5B /* DetailCommitTableViewCell.xib in Resources */,
-				C20D555727378F3A004A6F5B /* DetailCommitFavoritTableViewCell.xib in Resources */,
-				C27EFA042735A694001156D2 /* FavoritCommitTableViewCell.xib in Resources */,
+				C24B96F02735468E0051B64F /* DetailTableViewCell.xib in Resources */,
+				C27EFA042735A694001156D2 /* DetailFavoritesTableViewCell.xib in Resources */,
 				C25F021D27317EC2002B7635 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -410,26 +358,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C24B96EF2735468E0051B64F /* ContentCommitTableViewCell.swift in Sources */,
-				C20D555627378F3A004A6F5B /* DetailCommitFavoritTableViewCell.swift in Sources */,
-				C27EFA032735A694001156D2 /* FavoritCommitTableViewCell.swift in Sources */,
-				C2870A8627341E50006693CE /* ContentViewController.swift in Sources */,
-				C2AE3A6B273B971C00EA94AF /* DelailCommitModel.swift in Sources */,
-				C2AE2ADB273AC30A0056971B /* GitModel.swift in Sources */,
-				C2E404FF2732CF37006C2DD2 /* ViewControllerTabBar.swift in Sources */,
+				C24B96EF2735468E0051B64F /* DetailTableViewCell.swift in Sources */,
+				C27EFA032735A694001156D2 /* DetailFavoritesTableViewCell.swift in Sources */,
+				C25C15FB2743CC4300DDD0CA /* FavoritesViewModel.swift in Sources */,
+				C2870A8627341E50006693CE /* DetailViewController.swift in Sources */,
+				C2C293EA2740C3960032169F /* CommitData.swift in Sources */,
+				C2E404FF2732CF37006C2DD2 /* TabBarViewController.swift in Sources */,
 				C2AE2AD8273AC2E40056971B /* NetworkService.swift in Sources */,
-				C2B904AD273263A90005CF8E /* ViewControllerLogin.swift in Sources */,
+				C2B904AD273263A90005CF8E /* LoginViewController.swift in Sources */,
 				C2AE2AD4273AC2770056971B /* ViewModel.swift in Sources */,
-				C20D555227378EFC004A6F5B /* DetailCommitTableViewCell.swift in Sources */,
 				C25F022F2731865D002B7635 /* TableViewCell.swift in Sources */,
 				C25F021A27317EC2002B7635 /* ViewController.swift in Sources */,
-				C219D7BD27345CF70040D713 /* FavoritViewController.swift in Sources */,
-				C2112618273674B700005A6A /* DetailCommitViewController.swift in Sources */,
-				C2AE3A69273B92F300EA94AF /* ContentModel.swift in Sources */,
-				C211261A2736849700005A6A /* DetailCommitFavoritViewController.swift in Sources */,
+				C219D7BD27345CF70040D713 /* DetailFavoritesViewController.swift in Sources */,
+				C2C293EE2740C45F0032169F /* GitData.swift in Sources */,
 				C25F021627317EC2002B7635 /* AppDelegate.swift in Sources */,
-				C2FAC0FD273284D400504FE4 /* ViewControllerFavorites.swift in Sources */,
-				C2FAC1002732857D00504FE4 /* TableViewCellFavorites.swift in Sources */,
+				C2FAC0FD273284D400504FE4 /* FavoritesViewController.swift in Sources */,
+				C2FAC1002732857D00504FE4 /* FavoritesTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,4 +8,5 @@ target 'Git client' do
   # Pods for Git client
   pod 'SnapKit'
   pod 'Kingfisher', '~> 7.0'
+  pod 'RealmSwift', '~> 10.19'
 end

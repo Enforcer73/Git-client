@@ -24,4 +24,17 @@ class NetworkService {
         }
         task.resume()
     }
+    
+    
+    func getCommitsData(url: URL, completion: @escaping ([CommitData]?) -> Void) {
+        let task = URLSession.shared.dataTask(with: url) { data, response, error in
+            do {
+                let commitData = try JSONDecoder().decode([CommitData].self, from: data!)
+                completion(commitData)
+            } catch {
+                completion(nil)
+            }
+        }
+        task.resume()
+    }
 }
