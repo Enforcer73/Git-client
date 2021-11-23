@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -30,23 +31,23 @@
                         </userDefinedRuntimeAttributes>
                     </imageView>
                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N6h-yV-lmx">
-                        <rect key="frame" x="20" y="100" width="412" height="18"/>
+                        <rect key="frame" x="20" y="100" width="412" height="19.5"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lang" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0I7-Ob-BXp">
-                                <rect key="frame" x="0.0" y="0.0" width="137.5" height="18"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <rect key="frame" x="0.0" y="0.0" width="137.5" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="fork" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JtL-bP-Yg1">
-                                <rect key="frame" x="137.5" y="0.0" width="137" height="18"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <rect key="frame" x="137.5" y="0.0" width="137" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="star" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LZD-25-cb0">
-                                <rect key="frame" x="274.5" y="0.0" width="137.5" height="18"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <rect key="frame" x="274.5" y="0.0" width="137.5" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -57,7 +58,7 @@
                         </constraints>
                     </stackView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F4i-XI-NhZ">
-                        <rect key="frame" x="120" y="20" width="332" height="21.5"/>
+                        <rect key="frame" x="120" y="20" width="312" height="21.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                         <color key="textColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
@@ -69,11 +70,21 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="descript" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Agj-UM-eH0">
-                        <rect key="frame" x="30" y="133" width="402" height="51"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <rect key="frame" x="30" y="134.5" width="402" height="49.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
                         <color key="textColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aFz-9L-j4e">
+                        <rect key="frame" x="385" y="15" width="47" height="31"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain">
+                            <imageReference key="image" image="star" catalog="system" renderingMode="original"/>
+                        </buttonConfiguration>
+                        <connections>
+                            <action selector="saveButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="JWm-44-Cyi"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 <color key="tintColor" systemColor="tintColor"/>
@@ -83,6 +94,8 @@
                     <constraint firstItem="5ML-4B-BBJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="ByX-On-n7W"/>
                     <constraint firstItem="5ML-4B-BBJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Cpg-wE-f3D"/>
                     <constraint firstItem="Yz2-YD-frE" firstAttribute="leading" secondItem="5ML-4B-BBJ" secondAttribute="trailing" constant="30" id="FhB-aU-zOT"/>
+                    <constraint firstAttribute="trailing" secondItem="aFz-9L-j4e" secondAttribute="trailing" constant="20" id="FjQ-Fq-eOk"/>
+                    <constraint firstItem="aFz-9L-j4e" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="J8D-ci-XpT"/>
                     <constraint firstItem="N6h-yV-lmx" firstAttribute="top" secondItem="5ML-4B-BBJ" secondAttribute="bottom" constant="10" id="SbF-Jo-8B0"/>
                     <constraint firstAttribute="trailingMargin" secondItem="Yz2-YD-frE" secondAttribute="trailing" id="bev-e6-8kx"/>
                     <constraint firstItem="Agj-UM-eH0" firstAttribute="top" secondItem="N6h-yV-lmx" secondAttribute="bottom" constant="15" id="d9u-QM-Jn0"/>
@@ -90,9 +103,9 @@
                     <constraint firstAttribute="trailingMargin" secondItem="N6h-yV-lmx" secondAttribute="trailing" id="jMw-1X-7eK"/>
                     <constraint firstAttribute="bottomMargin" secondItem="Agj-UM-eH0" secondAttribute="bottom" constant="10" id="lLR-nA-Y2P"/>
                     <constraint firstItem="N6h-yV-lmx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="noe-ZU-2WM"/>
-                    <constraint firstAttribute="trailing" secondItem="F4i-XI-NhZ" secondAttribute="trailing" id="qmD-2N-QSc"/>
                     <constraint firstItem="Yz2-YD-frE" firstAttribute="top" secondItem="F4i-XI-NhZ" secondAttribute="bottom" constant="15" id="uMU-Kq-5TT"/>
                     <constraint firstItem="F4i-XI-NhZ" firstAttribute="leading" secondItem="5ML-4B-BBJ" secondAttribute="trailing" constant="30" id="uPb-9Z-wYH"/>
+                    <constraint firstAttribute="trailing" secondItem="F4i-XI-NhZ" secondAttribute="trailing" constant="20" id="uzp-nZ-T5A"/>
                 </constraints>
                 <userDefinedRuntimeAttributes>
                     <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
@@ -108,17 +121,19 @@
             <connections>
                 <outlet property="contentLabel" destination="Yz2-YD-frE" id="vvV-B5-WIB"/>
                 <outlet property="descriptLabel" destination="Agj-UM-eH0" id="vcP-jU-ivr"/>
+                <outlet property="favoritButton" destination="aFz-9L-j4e" id="KjH-Cj-RHI"/>
                 <outlet property="forksLabel" destination="JtL-bP-Yg1" id="xCG-9P-vAc"/>
                 <outlet property="languageLabel" destination="0I7-Ob-BXp" id="y57-hz-8bq"/>
                 <outlet property="starsLabel" destination="LZD-25-cb0" id="pgz-bQ-rb9"/>
                 <outlet property="userImage" destination="5ML-4B-BBJ" id="spv-jt-q3h"/>
                 <outlet property="userLabel" destination="F4i-XI-NhZ" id="AGx-8A-6HO"/>
             </connections>
-            <point key="canvasLocation" x="163.768115942029" y="-100.11160714285714"/>
+            <point key="canvasLocation" x="-664" y="-74"/>
         </tableViewCell>
     </objects>
     <resources>
         <image name="1" width="231" height="231"/>
+        <image name="star" catalog="system" width="128" height="116"/>
         <systemColor name="tintColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

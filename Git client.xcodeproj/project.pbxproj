@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C2072D96274755D5000F7802 /* GitDataRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2072D95274755D5000F7802 /* GitDataRealm.swift */; };
 		C219D7BD27345CF70040D713 /* DetailFavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C219D7BC27345CF70040D713 /* DetailFavoritesViewController.swift */; };
+		C2268DEE274BC717009D0051 /* RealmProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2268DED274BC717009D0051 /* RealmProvider.swift */; };
 		C24B96EF2735468E0051B64F /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24B96ED2735468E0051B64F /* DetailTableViewCell.swift */; };
 		C24B96F02735468E0051B64F /* DetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C24B96EE2735468E0051B64F /* DetailTableViewCell.xib */; };
+		C254019727464351001B6F80 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C254019627464351001B6F80 /* AuthViewController.swift */; };
+		C254019927465658001B6F80 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C254019827465658001B6F80 /* GoogleService-Info.plist */; };
 		C25C15FB2743CC4300DDD0CA /* FavoritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25C15FA2743CC4300DDD0CA /* FavoritesViewModel.swift */; };
 		C25F021627317EC2002B7635 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25F021527317EC2002B7635 /* AppDelegate.swift */; };
 		C25F021A27317EC2002B7635 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25F021927317EC2002B7635 /* ViewController.swift */; };
@@ -21,9 +25,10 @@
 		C27EFA032735A694001156D2 /* DetailFavoritesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27EFA012735A694001156D2 /* DetailFavoritesTableViewCell.swift */; };
 		C27EFA042735A694001156D2 /* DetailFavoritesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C27EFA022735A694001156D2 /* DetailFavoritesTableViewCell.xib */; };
 		C2870A8627341E50006693CE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2870A8527341E50006693CE /* DetailViewController.swift */; };
+		C29CC8D3274BFE6300C77ED0 /* LottieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29CC8D2274BFE6200C77ED0 /* LottieViewController.swift */; };
 		C2AE2AD4273AC2770056971B /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AE2AD3273AC2770056971B /* ViewModel.swift */; };
 		C2AE2AD8273AC2E40056971B /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AE2AD7273AC2E40056971B /* NetworkService.swift */; };
-		C2B904AD273263A90005CF8E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B904AC273263A90005CF8E /* LoginViewController.swift */; };
+		C2B2594D274D121F0027F388 /* gitlogo.json in Resources */ = {isa = PBXBuildFile; fileRef = C2B2594C274D121F0027F388 /* gitlogo.json */; };
 		C2C293EA2740C3960032169F /* CommitData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C293E92740C3960032169F /* CommitData.swift */; };
 		C2C293EE2740C45F0032169F /* GitData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C293ED2740C45F0032169F /* GitData.swift */; };
 		C2E404FF2732CF37006C2DD2 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E404FE2732CF37006C2DD2 /* TabBarViewController.swift */; };
@@ -37,9 +42,13 @@
 		00F43DC50DCE0BE2EA991BBB /* Pods-Git client.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Git client.debug.xcconfig"; path = "Target Support Files/Pods-Git client/Pods-Git client.debug.xcconfig"; sourceTree = "<group>"; };
 		04176C7A2A41261A0C0A22B2 /* Pods_Git_client.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Git_client.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74E28BF888172ACB56A63DC1 /* Pods-Git client.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Git client.release.xcconfig"; path = "Target Support Files/Pods-Git client/Pods-Git client.release.xcconfig"; sourceTree = "<group>"; };
+		C2072D95274755D5000F7802 /* GitDataRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitDataRealm.swift; sourceTree = "<group>"; };
 		C219D7BC27345CF70040D713 /* DetailFavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailFavoritesViewController.swift; sourceTree = "<group>"; };
+		C2268DED274BC717009D0051 /* RealmProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmProvider.swift; sourceTree = "<group>"; };
 		C24B96ED2735468E0051B64F /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
 		C24B96EE2735468E0051B64F /* DetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailTableViewCell.xib; sourceTree = "<group>"; };
+		C254019627464351001B6F80 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		C254019827465658001B6F80 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C25C15FA2743CC4300DDD0CA /* FavoritesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewModel.swift; sourceTree = "<group>"; };
 		C25F021227317EC2002B7635 /* Git client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Git client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C25F021527317EC2002B7635 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -53,9 +62,10 @@
 		C27EFA012735A694001156D2 /* DetailFavoritesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailFavoritesTableViewCell.swift; sourceTree = "<group>"; };
 		C27EFA022735A694001156D2 /* DetailFavoritesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailFavoritesTableViewCell.xib; sourceTree = "<group>"; };
 		C2870A8527341E50006693CE /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		C29CC8D2274BFE6200C77ED0 /* LottieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieViewController.swift; sourceTree = "<group>"; };
 		C2AE2AD3273AC2770056971B /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		C2AE2AD7273AC2E40056971B /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
-		C2B904AC273263A90005CF8E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C2B2594C274D121F0027F388 /* gitlogo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = gitlogo.json; sourceTree = "<group>"; };
 		C2C293E92740C3960032169F /* CommitData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitData.swift; sourceTree = "<group>"; };
 		C2C293ED2740C45F0032169F /* GitData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitData.swift; sourceTree = "<group>"; };
 		C2E404FE2732CF37006C2DD2 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
@@ -111,13 +121,13 @@
 			path = DetailFavoritesTableViewCell;
 			sourceTree = "<group>";
 		};
-		C228FD8327381F1700DE8332 /* LoginViewController */ = {
+		C228FD8327381F1700DE8332 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				C2B904AC273263A90005CF8E /* LoginViewController.swift */,
+				C254019627464351001B6F80 /* AuthViewController.swift */,
 				C2E404FE2732CF37006C2DD2 /* TabBarViewController.swift */,
 			);
-			name = LoginViewController;
+			name = Login;
 			path = ..;
 			sourceTree = "<group>";
 		};
@@ -138,6 +148,24 @@
 				C219D7BC27345CF70040D713 /* DetailFavoritesViewController.swift */,
 			);
 			path = DetailFavoritesViewController;
+			sourceTree = "<group>";
+		};
+		C22C4DC7274B6E720006BC0F /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				C22FBECE27406BD300843055 /* ViewController */,
+				C22FBED027406C0D00843055 /* DetailViewController */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		C22C4DC8274B6EB20006BC0F /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				C228FD872738203500DE8332 /* FavoritesViewController */,
+				C228FD882738206600DE8332 /* DetailFavoritesViewController */,
+			);
+			path = Favorites;
 			sourceTree = "<group>";
 		};
 		C22FBECE27406BD300843055 /* ViewController */ = {
@@ -198,24 +226,34 @@
 		C25F021427317EC2002B7635 /* Git client */ = {
 			isa = PBXGroup;
 			children = (
-				C2AE2AD5273AC2A30056971B /* Services */,
-				C228FD8327381F1700DE8332 /* LoginViewController */,
 				C25F021527317EC2002B7635 /* AppDelegate.swift */,
-				C22FBECE27406BD300843055 /* ViewController */,
-				C22FBED027406C0D00843055 /* DetailViewController */,
+				C29CC8D8274C230800C77ED0 /* Lottie */,
+				C2AE2AD5273AC2A30056971B /* Services */,
+				C228FD8327381F1700DE8332 /* Login */,
+				C22C4DC7274B6E720006BC0F /* Repositories */,
+				C22C4DC8274B6EB20006BC0F /* Favorites */,
 				C25F021B27317EC2002B7635 /* Main.storyboard */,
-				C228FD872738203500DE8332 /* FavoritesViewController */,
-				C228FD882738206600DE8332 /* DetailFavoritesViewController */,
 				C25F021E27317EC3002B7635 /* Assets.xcassets */,
 				C25F022027317EC3002B7635 /* LaunchScreen.storyboard */,
 				C25F022327317EC3002B7635 /* Info.plist */,
+				C254019827465658001B6F80 /* GoogleService-Info.plist */,
 			);
 			path = "Git client";
+			sourceTree = "<group>";
+		};
+		C29CC8D8274C230800C77ED0 /* Lottie */ = {
+			isa = PBXGroup;
+			children = (
+				C29CC8D2274BFE6200C77ED0 /* LottieViewController.swift */,
+				C2B2594C274D121F0027F388 /* gitlogo.json */,
+			);
+			path = Lottie;
 			sourceTree = "<group>";
 		};
 		C2AE2AD5273AC2A30056971B /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				CC297E03274AC008006286FB /* Data Base */,
 				C2AE2AD6273AC2C80056971B /* Network */,
 			);
 			path = Services;
@@ -235,8 +273,17 @@
 			children = (
 				C2C293ED2740C45F0032169F /* GitData.swift */,
 				C2C293E92740C3960032169F /* CommitData.swift */,
+				C2072D95274755D5000F7802 /* GitDataRealm.swift */,
 			);
 			path = NetworkModels;
+			sourceTree = "<group>";
+		};
+		CC297E03274AC008006286FB /* Data Base */ = {
+			isa = PBXGroup;
+			children = (
+				C2268DED274BC717009D0051 /* RealmProvider.swift */,
+			);
+			path = "Data Base";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,6 +347,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2FAC1012732857D00504FE4 /* FavoritesTableViewCell.xib in Resources */,
+				C2B2594D274D121F0027F388 /* gitlogo.json in Resources */,
+				C254019927465658001B6F80 /* GoogleService-Info.plist in Resources */,
 				C25F022227317EC3002B7635 /* LaunchScreen.storyboard in Resources */,
 				C25F02302731865D002B7635 /* TableViewCell.xib in Resources */,
 				C25F021F27317EC3002B7635 /* Assets.xcassets in Resources */,
@@ -358,6 +407,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2072D96274755D5000F7802 /* GitDataRealm.swift in Sources */,
 				C24B96EF2735468E0051B64F /* DetailTableViewCell.swift in Sources */,
 				C27EFA032735A694001156D2 /* DetailFavoritesTableViewCell.swift in Sources */,
 				C25C15FB2743CC4300DDD0CA /* FavoritesViewModel.swift in Sources */,
@@ -365,10 +415,12 @@
 				C2C293EA2740C3960032169F /* CommitData.swift in Sources */,
 				C2E404FF2732CF37006C2DD2 /* TabBarViewController.swift in Sources */,
 				C2AE2AD8273AC2E40056971B /* NetworkService.swift in Sources */,
-				C2B904AD273263A90005CF8E /* LoginViewController.swift in Sources */,
+				C2268DEE274BC717009D0051 /* RealmProvider.swift in Sources */,
 				C2AE2AD4273AC2770056971B /* ViewModel.swift in Sources */,
 				C25F022F2731865D002B7635 /* TableViewCell.swift in Sources */,
+				C254019727464351001B6F80 /* AuthViewController.swift in Sources */,
 				C25F021A27317EC2002B7635 /* ViewController.swift in Sources */,
+				C29CC8D3274BFE6300C77ED0 /* LottieViewController.swift in Sources */,
 				C219D7BD27345CF70040D713 /* DetailFavoritesViewController.swift in Sources */,
 				C2C293EE2740C45F0032169F /* GitData.swift in Sources */,
 				C25F021627317EC2002B7635 /* AppDelegate.swift in Sources */,

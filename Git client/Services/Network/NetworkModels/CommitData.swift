@@ -8,8 +8,7 @@
 import Foundation
 import RealmSwift
 
-
-class CommitData: Object, Codable {
+final class CommitData: Object, Codable {
 
     @Persisted var message: String? = nil
     @Persisted var name: String? = nil
@@ -22,7 +21,11 @@ class CommitData: Object, Codable {
     var createdAtFormatted: String {
         return createdAtFormatting()
     }
-    
+
+    override class func primaryKey() -> String? {
+      return "id"
+    }
+
     enum RootKeys: String, CodingKey {
         case commit = "commit"
         case committer = "committer"
@@ -46,8 +49,7 @@ class CommitData: Object, Codable {
         case avatarUrl = "avatar_url"
     }
 
-    
-    //MAKE: - Decoding
+    //MARK: - Decoding
     convenience required init(from decoder: Decoder) throws {
         self.init()
         let rootContainer = try decoder.container(keyedBy: RootKeys.self)
@@ -65,15 +67,11 @@ class CommitData: Object, Codable {
             avatarUrl = try? committerContainer.decodeIfPresent(String.self, forKey: .avatarUrl)
         }
     }
-    
-    override class func primaryKey() -> String? {
-      return "id"
-    }
-    
-    //MAKE: - Formatting date
+
+    //MARK: - Formatting date
     private func createdAtFormatting() -> String {
         guard let atUpdate = date else { return ""}
-        
+
         let dateFormatterGet = DateFormatter()
         dateFormatterGet.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
 

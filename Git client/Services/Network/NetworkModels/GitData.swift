@@ -8,8 +8,7 @@
 import Foundation
 import RealmSwift
 
-
-class GitData: Object, Codable {
+final class GitData: Object, Codable {
 
     @Persisted var login: String?
     @Persisted var fullName: String?
@@ -26,6 +25,10 @@ class GitData: Object, Codable {
         return updatedAtFormatting()
     }
 
+    override class func primaryKey() -> String? {
+      return "id"
+    }
+
     enum RootKeys: String, CodingKey {
         case id = "node_id"
         case nameRep = "name"
@@ -37,13 +40,13 @@ class GitData: Object, Codable {
         case stars = "stargazers_count"
         case updatedAt = "updated_at"
     }
-    
+
     enum OwnerKeys: String, CodingKey {
         case login = "login"
         case avatarUrl = "avatar_url"
     }
 
-    //MAKE: - Decoding
+    //MARK: - Decoding
     convenience required init(from decoder: Decoder) throws {
         self.init()
         let rootContainer = try decoder.container(keyedBy: RootKeys.self)
@@ -55,26 +58,22 @@ class GitData: Object, Codable {
         forksCount      = try? rootContainer.decodeIfPresent(Int.self, forKey: .forksCount)
         stars           = try? rootContainer.decodeIfPresent(Int.self, forKey: .stars)
         id              = try? rootContainer.decodeIfPresent(String.self, forKey: .id)
-        
+
         let ownerContainer = try rootContainer.nestedContainer(keyedBy: OwnerKeys.self, forKey: .owner)
         login           = try? ownerContainer.decodeIfPresent(String.self, forKey: .login)
         avatarUrl       = try? ownerContainer.decodeIfPresent(String.self, forKey: .avatarUrl)
     }
 
-    override class func primaryKey() -> String? {
-      return "id"
-    }
-    
-    //MAKE: - Formatting date
+    //MARK: - Formatting date
     private func updatedAtFormatting() -> String {
         guard let atUpdate = updatedAt else { return ""}
         
         let dateFormatterGet = DateFormatter()
         dateFormatterGet.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
-        
+
         let dateFormatterPrint = DateFormatter()
         dateFormatterPrint.dateFormat = "dd.MM.yyyy"
-        
+
         if let date = dateFormatterGet.date(from: atUpdate) {
             return dateFormatterPrint.string(from: date)
         }

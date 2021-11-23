@@ -4,9 +4,15 @@
 target 'Git client' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
+pod 'Firebase/Core'
+pod 'Firebase/Analytics'
+pod 'Firebase/Auth'
+pod 'Firebase/Firestore'
+pod 'Firebase/Database'
 
   # Pods for Git client
-  pod 'SnapKit'
-  pod 'Kingfisher', '~> 7.0'
-  pod 'RealmSwift', '~> 10.19'
+pod 'Kingfisher'
+pod 'RealmSwift'
+pod 'lottie-ios'
+
 end
